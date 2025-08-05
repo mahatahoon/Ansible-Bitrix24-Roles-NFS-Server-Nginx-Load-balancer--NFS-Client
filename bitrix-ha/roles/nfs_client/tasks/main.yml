@@ -12,7 +12,7 @@
 - name: Mount NFS share
   ansible.posix.mount:
     path: /home/bitrix/www
-    src: 192.168.1.100:/home/bitrix/www
+    src: 192.168.1.105:/home/bitrix/www
     fstype: nfs
     opts: defaults
     state: mounted
