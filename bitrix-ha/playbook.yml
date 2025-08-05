@@ -1,0 +1,13 @@
+- name: Setup NGINX Load Balancer and NFS Server
+  hosts: loadbalancer
+  become: yes
+  roles:
+    - nginx_lb
+    - nfs_server
+
+- name: Configure Bitrix servers as NFS Clients
+  hosts: bitrix_nodes
+  become: yes
+  roles:
+    - nfs_client
+
