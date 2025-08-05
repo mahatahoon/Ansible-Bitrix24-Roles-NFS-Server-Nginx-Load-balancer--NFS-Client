@@ -2,6 +2,6 @@
 localhost	ansible_connection=local
 
 [bitrix_nodes]
-192.168.1.108 ansible_user=root ansible_ssh_private_key_file=/root/.ssh/nfs_key
-192.168.1.20  ansible_user=root ansible_ssh_private_key_file=/root/.ssh/nfs_key
+192.168.1.108 ansible_user=root ansible_ssh_private_key_file=/root/.ssh/nfs_keys
+192.168.1.20  ansible_user=root ansible_ssh_private_key_file=/root/.ssh/nfs_keys
 
